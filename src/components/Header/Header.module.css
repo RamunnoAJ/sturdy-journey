@@ -1,0 +1,80 @@
+.header {
+  padding: 10px 20px;
+  background-color: var(--background-primary-color);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.menuItem {
+  list-style: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.menuItem:hover {
+  color: var(--primary-color);
+}
+
+.userSection {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.userName {
+  font-size: 18px;
+}
+
+.userImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: var(--background-primary-color);
+    width: 100%;
+    text-align: center;
+    padding-block: 10px;
+  }
+
+  .menu.open {
+    display: flex;
+    height: auto;
+  }
+
+  .menuToggle {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 769px) {
+  .menuToggle {
+    display: none;
+  }
+}
