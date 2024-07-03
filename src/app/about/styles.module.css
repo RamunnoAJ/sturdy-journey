@@ -1,0 +1,27 @@
+.main {
+  min-height: calc(100vh - 70px);
+  display: grid;
+  place-content: center;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    margin-top: 40px;
+  }
+
+  .about__cards__container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
