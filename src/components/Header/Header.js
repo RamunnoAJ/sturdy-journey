@@ -2,6 +2,8 @@
 
 import React, { useState } from "react";
 import styles from "./Header.module.css";
+import Link from "next/link";
+import { createPortal } from "react-dom";
 
 export default function Header({ userName, userImage }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,7 +17,11 @@ export default function Header({ userName, userImage }) {
       <nav className={styles.navbar}>
         <ul className={`${styles.menu} ${menuOpen ? styles.open : ""}`}>
           <li className={styles.menuItem}>Inicio</li>
-          <li className={styles.menuItem}>Sobre mi</li>
+          <li className={styles.menuItem}>
+            <Link href={"/about"} className={styles.link}>
+              Sobre mi
+            </Link>
+          </li>
           <li className={styles.menuItem}>Contacto</li>
         </ul>
         <div className={styles.menuToggle} onClick={toggleMenu}>
@@ -26,6 +32,11 @@ export default function Header({ userName, userImage }) {
           <img src={userImage} alt="User" className={styles.userImage} />
         </div>
       </nav>
+      {menuOpen &&
+        createPortal(
+          <div onClick={toggleMenu} className={styles.portal}></div>,
+          document.body,
+        )}
     </header>
   );
 }

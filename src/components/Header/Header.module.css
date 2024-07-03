@@ -12,11 +12,6 @@
   margin: 0 auto;
 }
 
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-}
-
 .menu {
   display: flex;
   gap: 20px;
@@ -26,10 +21,15 @@
 .menuItem {
   list-style: none;
   cursor: pointer;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
   transition: all 0.3s ease-in-out;
 }
 
-.menuItem:hover {
+.link:hover {
   color: var(--primary-color);
 }
 
@@ -47,6 +47,15 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
+}
+
+.portal {
+  position: fixed;
+  z-index: 30;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
 }
 
 @media (max-width: 768px) {
