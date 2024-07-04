@@ -1,0 +1,28 @@
+.main {
+  min-height: calc(100vh - 70px);
+  display: grid;
+  place-content: center;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.inner__container {
+  width: 100%;
+  max-width: 420px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    align-items: start;
+  }
+}
