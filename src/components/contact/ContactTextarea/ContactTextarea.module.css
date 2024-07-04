@@ -1,0 +1,14 @@
+.form__textarea_container {
+  width: 100%;
+}
+
+.form__textarea {
+  width: 100%;
+  border: 0;
+  padding: 8px 16px;
+  resize: none;
+}
+
+.form__textarea:focus {
+  outline: 2px solid var(--primary-color);
+}
