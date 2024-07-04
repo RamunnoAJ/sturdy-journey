@@ -1,0 +1,30 @@
+.main {
+  margin-top: 40px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 500px;
+}
+
+.title {
+  font-size: 24px;
+  letter-spacing: 0.04em;
+  margin-bottom: 20px;
+}
