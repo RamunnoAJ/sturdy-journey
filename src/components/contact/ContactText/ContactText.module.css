@@ -1,0 +1,22 @@
+.contact__title {
+  font-size: 24px;
+  letter-spacing: 0.04em;
+  margin-bottom: 20px;
+}
+
+.contact__paragraph {
+  margin-block: 10px;
+  letter-spacing: 0.02em;
+  line-height: 1.3;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .contact__title {
+    font-size: 32px;
+  }
+
+  .contact__paragraph {
+    font-size: 18px;
+  }
+}
