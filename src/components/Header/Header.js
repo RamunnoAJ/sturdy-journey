@@ -16,17 +16,17 @@ export default function Header({ userName, userImage }) {
     <header className={styles.header}>
       <nav className={styles.navbar}>
         <ul className={`${styles.menu} ${menuOpen ? styles.open : ""}`}>
-          <li className={styles.menuItem}>
+          <li className={styles.menuItem} onClick={() => setMenuOpen(false)}>
             <Link href={"/"} className={styles.link}>
               Inicio
             </Link>
           </li>
-          <li className={styles.menuItem}>
+          <li className={styles.menuItem} onClick={() => setMenuOpen(false)}>
             <Link href={"/about"} className={styles.link}>
               Sobre mi
             </Link>
           </li>
-          <li className={styles.menuItem}>
+          <li className={styles.menuItem} onClick={() => setMenuOpen(false)}>
             <Link href={"/contact"} className={styles.link}>
               Contacto
             </Link>
