@@ -16,7 +16,11 @@ export default function InterestsForm({
   placeholder,
 }) {
   return (
-    <form onSubmit={onSubmit} className={styles.form}>
+    <form
+      onSubmit={onSubmit}
+      className={styles.form}
+      data-testid="interests-form"
+    >
       <input
         type="text"
         value={value}
