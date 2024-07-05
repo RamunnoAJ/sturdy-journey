@@ -4,9 +4,11 @@ import React, { useState } from "react";
 import styles from "./Header.module.css";
 import Link from "next/link";
 import { createPortal } from "react-dom";
+import useClosePage from "@/hooks/useClosePage";
 
 export default function Header({ userName, userImage }) {
   const [menuOpen, setMenuOpen] = useState(false);
+  useClosePage();
 
   function toggleMenu() {
     setMenuOpen(!menuOpen);
